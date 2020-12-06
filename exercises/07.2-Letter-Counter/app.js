@@ -3,4 +3,19 @@ let counts = {};
 
 // your code here
 
+for (let i=0; i<par.length; i++) {
+    let letterNumbers = par[i].toLowerCase();
+    if (letterNumbers == " ") continue;
+    if (counts[letterNumbers] == undefined) {
+        counts[letterNumbers] = 1
+    }
+    else {
+        counts[letterNumbers] += 1;
+    }
+}   
+
+
+
+
+
 console.log(counts);
